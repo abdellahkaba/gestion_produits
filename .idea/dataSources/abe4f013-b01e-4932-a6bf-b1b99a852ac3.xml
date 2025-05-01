@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>759</IntrospectionStateNumber>
+      <IntrospectionStateNumber>763</IntrospectionStateNumber>
       <ServerVersion>17.4</ServerVersion>
       <StartupTime>1746099235</StartupTime>
       <TimeZones>true ACDT
@@ -1416,7 +1416,7 @@ true posixrules
 13219||10|C|G
 13219||-9223372036854775808|U|G
 13219||10|U|G</Grants>
-      <IntrospectionStateNumber>759</IntrospectionStateNumber>
+      <IntrospectionStateNumber>763</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>username</OwnerName>
     </database>
@@ -4838,11 +4838,140 @@ true posixrules
     <schema id="265" parent="3" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>759</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2025-05-01.18:16:03</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>763</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2025-05-01.18:23:28</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
+    <sequence id="266" parent="265" name="_category_id_seq">
+      <ObjectId>16389</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>760</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <OwnerName>username</OwnerName>
+    </sequence>
+    <sequence id="267" parent="265" name="_product_id_seq">
+      <ObjectId>16397</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>761</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <OwnerName>username</OwnerName>
+    </sequence>
+    <table id="268" parent="265" name="_category">
+      <ObjectId>16390</ObjectId>
+      <StateNumber>762</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>username</OwnerName>
+    </table>
+    <table id="269" parent="265" name="_product">
+      <ObjectId>16398</ObjectId>
+      <StateNumber>762</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>username</OwnerName>
+    </table>
+    <column id="270" parent="268" name="id">
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>760</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <SequenceId>16389</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="271" parent="268" name="description">
+      <Position>2</Position>
+      <StateNumber>760</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="272" parent="268" name="name">
+      <Position>3</Position>
+      <StateNumber>760</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="273" parent="268" name="_category_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16395</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>760</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="274" parent="268" name="_category_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16396</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>760</StateNumber>
+      <UnderlyingIndexId>16395</UnderlyingIndexId>
+    </key>
+    <column id="275" parent="269" name="id">
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>761</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <SequenceId>16397</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="276" parent="269" name="description">
+      <Position>2</Position>
+      <StateNumber>761</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="277" parent="269" name="name">
+      <Position>3</Position>
+      <StateNumber>761</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="278" parent="269" name="price">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>761</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="279" parent="269" name="quantity">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>761</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="280" parent="269" name="categorie_id">
+      <Position>6</Position>
+      <StateNumber>761</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="281" parent="269" name="fkekw70beyipjjkb2q1boovxrsh">
+      <ColNames>categorie_id</ColNames>
+      <ObjectId>16405</ObjectId>
+      <StateNumber>762</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>16390</RefTableId>
+    </foreign-key>
+    <index id="282" parent="269" name="_product_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16403</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>761</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="283" parent="269" name="_product_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16404</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>761</StateNumber>
+      <UnderlyingIndexId>16403</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>
