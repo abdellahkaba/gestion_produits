@@ -24,7 +24,7 @@ public interface ProductMapper {
     @Mapping(source = "categorie.id", target = "categorieId")
     @Mapping(source = "categorie.name", target = "categorieName")
     ProductResponse toProductResponse(Product product);
-    List<ProductResponse> toProductResponseList(List<ProductResponse> products);
+    List<ProductResponse> toProductResponseList(List<Product> products);
 
 
     @Named("mapCategorieIdToCategory")

@@ -1,6 +1,5 @@
 package com.isi.repository;
 
-import com.isi.model.Category;
 import com.isi.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
