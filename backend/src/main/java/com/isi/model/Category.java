@@ -20,6 +20,6 @@ public class Category {
     private String name;
     private String description;
 
-    @OneToMany(mappedBy = "product", orphanRemoval = true, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "categorie", orphanRemoval = true, cascade = CascadeType.ALL)
     private List<Product> products;
 }

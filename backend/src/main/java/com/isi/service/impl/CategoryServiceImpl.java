@@ -55,6 +55,11 @@ public class CategoryServiceImpl implements CategoryService {
     public CategoryResponse updateCategory(CategoryRequest request) {
         var category = repository.findById(request.getId())
                 .orElseThrow(() -> new EntityNotFoundException(messageSource.getMessage("categorie.notfound", new Object[]{request.getId()}, Locale.getDefault())));
+
+        if (repository.findByName(request.getName()).isPresent()) {
+            throw new EntityExistsException(messageSource.getMessage("categorie.exists",
+                    new Object[]{request.getName()}, Locale.getDefault()));
+        }
         var updateCategory = repository.save(category);
         category.setName(request.getName());
         category.setDescription(request.getDescription());

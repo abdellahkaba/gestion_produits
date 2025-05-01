@@ -40,7 +40,7 @@ public class ProductServiceImpl implements ProductService {
                     new Object[]{request.getName()}, Locale.getDefault()));
         }
         Product product = mapper.toProduct(request);
-        product.setCategory(category);
+        product.setCategorie(category);
         var savedProduct = repository.save(product);
         return mapper.toProductResponse(savedProduct);
     }
@@ -76,7 +76,7 @@ public class ProductServiceImpl implements ProductService {
         product.setDescription(request.getDescription());
         product.setPrice(request.getPrice());
         product.setQuantity(request.getQuantity());
-        product.setCategory(category);
+        product.setCategorie(category);
         var updateProduct = repository.save(product);
         return mapper.toProductResponse(updateProduct);
     }
