@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b2034-9169-470f-b3dd-89484c31b192" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/abe4f013-b01e-4932-a6bf-b1b99a852ac3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/abe4f013-b01e-4932-a6bf-b1b99a852ac3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/abe4f013-b01e-4932-a6bf-b1b99a852ac3/storage_v2/_src_/database/produit_db.1FbRaA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/abe4f013-b01e-4932-a6bf-b1b99a852ac3/storage_v2/_src_/database/produit_db.1FbRaA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/openapi/openapi.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +107,10 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kaba\Documents\spring\gestion_produits\frontend\src\app\services\utils\keycloak" />
+      <recent name="C:\Users\Kaba\Documents\spring\gestion_produits\frontend\src\app\services\utils" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.isi.service.impl" />
     </key>
@@ -169,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746097229582</updated>
-      <workItem from="1746097230808" duration="18212000" />
+      <workItem from="1746097230808" duration="20200000" />
     </task>
     <servers />
   </component>
