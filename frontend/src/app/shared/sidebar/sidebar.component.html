@@ -1,0 +1,28 @@
+<div class="sidebar">
+  <nav class="nav flex-column">
+
+    <a class="nav-link" routerLink="/categories">
+      <span class="icon">
+        <i class="bi bi-collection"></i>
+      </span>
+      <span class="description"> Categories</span>
+    </a>
+
+    <a class="nav-link" routerLink="/products">
+      <span class="icon">
+        <i class="bi bi-box-seam"></i>
+      </span>
+      <span class="description"> Product</span>
+    </a>
+
+  </nav>
+</div>
+
+<div class="logout-button">
+  <button class="btn btn-danger" (click)="logout()">Déconnexion</button>
+</div>
+
+<main class="main-content">
+  <router-outlet/>
+</main>
+
