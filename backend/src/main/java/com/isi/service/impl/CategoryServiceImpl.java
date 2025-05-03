@@ -60,9 +60,10 @@ public class CategoryServiceImpl implements CategoryService {
             throw new EntityExistsException(messageSource.getMessage("categorie.exists",
                     new Object[]{request.getName()}, Locale.getDefault()));
         }
-        var updateCategory = repository.save(category);
+
         category.setName(request.getName());
         category.setDescription(request.getDescription());
+        var updateCategory = repository.save(category);
         return mapper.toCategoryResponse(updateCategory);
     }
 
