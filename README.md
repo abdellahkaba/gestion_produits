@@ -11,33 +11,33 @@ Faites clone
 
     git clone https://github.com/abdellahkaba/gestion_produits.git
     
-# Executer la commande docker-compose dans la grande racine du projet
+Executer la commande docker-compose dans la grande racine du projet
 
     docker compose up -d
 
-# Import realm Keycloak
+Import realm Keycloak
     
     Lancez Keycloak dans docker desktop et acceder  à interface graphique par (username: admin, password: admin)
     Il y'a un fichier dans le dossier  qui est keycloak/realm/gestion-produits au niveau de la recine de projet alors copiez le contenu de fichier et collez en créant un realm dans Keycloak
 
-# Démarrer le projet pour les tests (backend)
+Démarrer le projet pour les tests (backend)
 
       cd backend
       mvn clean package
       
-# créer l'image de backend (build)
+Créer l'image de backend (build)
 
     dans terminal de backend faites: 
     docker build -t product-api .
 
-# Démarrer la partie frontend
+Démarrer la partie frontend
     
       Palcez-vous dans le grand dossier
       cd frontend
       npm install
       ng build --configuration production
 
-# créer l'image de frontend (build)
+Créer l'image de frontend (build)
 
      dans terminal de backend faites: 
      docker build -t product-frontend .
