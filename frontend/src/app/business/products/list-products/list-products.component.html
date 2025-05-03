@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span><h5>Liste des Produits</h5></span>
+    <a routerLink="/new-product" class="btn btn-primary btn-sm">
+      <i class="bi bi-plus-lg"></i> Ajouter un Produit
+    </a>
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Categorie</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+        @for (product of response ; track product.id) {
+          <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }} FCFA</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.categorieName }}</td>
+            <td>{{ product.description }}</td>
+            <td>
+              <button *ngIf="product.id !== undefined" (click)="editProduct(product)" class="btn btn-success btn-sm me-2">
+                <i class="bi bi-pencil"></i>
+              </button>
+              <button *ngIf="product.id" (click)="deleteProduct(product.id)" class="btn btn-danger btn-sm">
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <div class="card-footer">List des Produits</div>
+</div>
+

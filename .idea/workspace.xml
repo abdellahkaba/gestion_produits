@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b2034-9169-470f-b3dd-89484c31b192" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/isi/config/BeansConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/isi/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/isi/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/form-categories/form-categories.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/form-categories/form-categories.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/form-categories/form-categories.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/form-categories/form-categories.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/form-categories/form-categories.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/form-categories/form-categories.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/form-categories/form-categories.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/form-categories/form-categories.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/list-categories/list-categories.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/list-categories/list-categories.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/list-categories/list-categories.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/list-categories/list-categories.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/list-categories/list-categories.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/list-categories/list-categories.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/list-categories/list-categories.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/list-categories/list-categories.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,10 +121,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kaba\Documents\spring\gestion_produits\frontend\src\app\business\products" />
+      <recent name="C:\Users\Kaba\Documents\spring\gestion_produits\frontend\src\app\business\category" />
       <recent name="C:\Users\Kaba\Documents\spring\gestion_produits\frontend\src\app\shared\login" />
       <recent name="C:\Users\Kaba\Documents\spring\gestion_produits\frontend\src\app" />
       <recent name="C:\Users\Kaba\Documents\spring\gestion_produits\frontend\src\app\services\utils\keycloak" />
-      <recent name="C:\Users\Kaba\Documents\spring\gestion_produits\frontend\src\app\services\utils" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.isi.service.impl" />
@@ -186,7 +192,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746097229582</updated>
       <workItem from="1746097230808" duration="25005000" />
-      <workItem from="1746201337906" duration="9667000" />
+      <workItem from="1746201337906" duration="14275000" />
     </task>
     <servers />
   </component>

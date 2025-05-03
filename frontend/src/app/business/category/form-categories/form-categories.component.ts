@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ToastrService} from 'ngx-toastr';
-import {CategoriesService} from '../../services/services/categories.service';
-import {CategoryRequest} from '../../services/models/category-request';
+import {CategoriesService} from '../../../services/services/categories.service';
+import {CategoryRequest} from '../../../services/models/category-request';
 import {NgForOf, NgIf} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 
