@@ -59,6 +59,36 @@ services:
       timeout: 5s
       retries: 5
 
+  product-api:
+    image: product-api
+    ports:
+      - "8083:8083"
+    environment:
+      - DB_HOST=postgres-produits
+      - DB_PORT=5432
+      - DB_NAME=produit_db
+      - DB_USERNAME=username
+      - DB_PASSWORD=password
+    depends_on:
+      - postgres
+    networks:
+      - gestion-produits
+  ###
+  product-front:
+    image: product-front
+    ports:
+      - "4200:80"
+    environment:
+      - KEYCLOAK_URL=http://keycloak:8181
+      - KEYCLOAK_REALM=gestion-produits
+      - KEYCLOAK_CLIENT_ID=gestions-produits-app
+    networks:
+      - gestion-produits
+    depends_on:
+      - product-api
+      - keycloak
+
+
 
 networks:
   gestion-produits:

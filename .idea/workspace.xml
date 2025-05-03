@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b2034-9169-470f-b3dd-89484c31b192" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/form-categories/form-categories.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/form-categories/form-categories.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/form-categories/form-categories.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/form-categories/form-categories.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/form-categories/form-categories.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/form-categories/form-categories.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/form-categories/form-categories.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/form-categories/form-categories.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/list-categories/list-categories.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/list-categories/list-categories.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/list-categories/list-categories.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/list-categories/list-categories.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/list-categories/list-categories.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/list-categories/list-categories.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/business/list-categories/list-categories.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/business/category/list-categories/list-categories.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/logs/logs.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +25,7 @@
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -76,6 +73,14 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="C:\apache-maven-3.8.8" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -107,6 +112,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.35301507",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "ts.external.directory.path": "C:\\Users\\Kaba\\Documents\\spring\\gestion_produits\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -192,7 +201,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746097229582</updated>
       <workItem from="1746097230808" duration="25005000" />
-      <workItem from="1746201337906" duration="14275000" />
+      <workItem from="1746201337906" duration="16376000" />
     </task>
     <servers />
   </component>

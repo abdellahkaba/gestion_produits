@@ -26,4 +26,9 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown (JdbcEnvironmentInitiator.java:157)
-[
+[[HikariPool-1 housekeeper] WARN  | com.zaxxer.hikari.pool.HikariPool                            | HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m55s108ms815µs200ns). (HikariPool.java:797)
+[SpringApplicationShutdownHook] INFO  | org.springframework.boot.web.embedded.tomcat.GracefulShutdown | Commencing graceful shutdown. Waiting for active requests to complete (GracefulShutdown.java:54)
+[tomcat-shutdown] INFO  | org.springframework.boot.web.embedded.tomcat.GracefulShutdown | Graceful shutdown complete (GracefulShutdown.java:76)
+[SpringApplicationShutdownHook] INFO  | org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean | Closing JPA EntityManagerFactory for persistence unit 'default' (AbstractEntityManagerFactoryBean.java:660)
+[SpringApplicationShutdownHook] INFO  | com.zaxxer.hikari.HikariDataSource                           | HikariPool-1 - Shutdown initiated... (HikariDataSource.java:349)
+[SpringApplicationShutdownHook] INFO  | com.zaxxer.hikari.HikariDataSource                           | HikariPool-1 - Shutdown completed. (HikariDataSource.java:351)
