@@ -40,7 +40,7 @@ EDACY
 # Créer l'image de frontend (build)
 
      dans terminal de backend faites: 
-     docker build -t product-frontend .
+     docker build -t product-front .
 
 # Les Technologies utilisées 
 
